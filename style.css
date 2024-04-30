@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georama", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10vw;
+  z-index: 99;
+}
+#logo{
+  width: 5rem;
+  margin-top: 3vh;
+  position: relative;
+}
+
+nav a,
+i {
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: #fff;
+}
+
+.cntr-nav {
+  display: flex;
+  gap: 3vw;
+}
+nav i {
+  font-size: 2vw;
+}
+.one {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(150deg, rgb(233, 141, 12), rgb(237, 119, 8));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* padding-top: 1.5rem; */
+}
+
+.one h1{
+    font-size: 25vw;
+    font-family: "Georama", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: white;
+  text-shadow:  0 0 0.1em rgb(97, 97, 234), 0 0 0.1em rgb(219, 165, 209);
+  
+}
+#fanta {
+  width: 30%;
+  z-index: 2;
+  position: absolute;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#slice{
+    position: absolute;
+    width: 17%;
+    top: 10%;
+    left: 32%;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#orange{
+    width: 20%;
+    position: absolute;
+    z-index: 3;
+    top: 60%;
+    right: 32%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+#leaf{
+  top: 10%;
+  left: 2%;
+  transform: rotate(60deg);
+  width: 20%;
+  position: absolute;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#leaf2{
+  top: 70%;
+  left: 80%;
+  width: 15%;
+  transform: rotate(-90deg);
+  position: absolute;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#leaf3{
+  position: absolute;
+  top: 10%;
+  width: 20%;
+  right: 0;
+}
+
+
+.two{
+  display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(150deg,#8b3728, #4d0e03 );
+
+    /* background-color: #4d231c; */
+}
+
+.lft-two, .rght-two{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  gap: 4vh;
+  height: 100%;
+  
+}
+
+.lft-two svg{
+  margin-top: 50vh;
+  width: 90%;
+  transform: rotateX(50%);
+}
+
+.rght-two h1{
+  color: orange;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 5vw;
+}
+.rght-two p{
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1vw;
+  width: 80%;
+}
+
+.three{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(150deg,#8b3728, #4d0e03 );
+
+}
+
+.card{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25vw;
+  height: 70vh;
+  gap: 2vh;
+  border-radius: 20px;
+  margin-top: 10vh;
+  background-color: #fff;
+}
+
+.card:nth-child(1){
+  background: linear-gradient(150deg,rgb(216, 56, 21), rgb(238, 10, 10) );
+  color: white;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.card:nth-child(3){ 
+  color: white;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background: linear-gradient(150deg,rgb(3, 98, 125), rgb(12, 54, 183) );
+}
+
+.card:nth-child(2){ 
+  color: white;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background: linear-gradient(150deg,rgb(217, 159, 52), rgb(255,148,19) );
+}
+
+.card h1{
+  margin-top: 45vh;
+
+  /* color: white; */
+  font-size: 3vw;
+}
+
+.card button{
+  padding: 1vw 2vw;
+  font-size: 1vw;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(255, 149, 0);
+  color: white;
+}
+
+#cocacola{
+  top: -10%;
+  width: 65%;
+  height: 80%;
+  left: 17.5%;
+  transform: translate(-50% 0%);
+  position: absolute;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#pepsi{
+  top: -15%;
+  width: 95%;
+  height: 90%;
+  left: 3%;
+  position: absolute;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+.lemon1{
+  position: absolute;
+  top: -28%;
+  width: 70%;
+  transform: translate(-50% 0%);
+  /* height: 80%; */
+  left: -10%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+.lemon{
+  position: absolute;
+  top: -28%;
+  width: 70%;
+  /* transform: translate(-50% 0%); */
+  /* height: 80%; */
+  left: -10%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+/* .four{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  width: 100%;
+  height: 40vh;
+  background-color: white;
+} */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content div {
+  flex: 1;
+}
+
+.footer-left, .footer-center, .footer-right {
+  padding: 0 20px;
+}
+
+.footer-left h3, .footer-center h3, .footer-right h3 {
+  font-size: 20px;
+}
+
+.footer-left p, .footer-center p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-right a {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+nav a:hover{
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
